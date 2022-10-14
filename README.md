@@ -1,2 +1,2 @@
 # Proiect-2-OOP
-Main.java trebuie rulat
+GameManager.java trebuie rulat
