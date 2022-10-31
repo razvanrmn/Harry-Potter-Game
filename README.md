@@ -1,2 +1,2 @@
-# Proiect-2-OOP
-GameManager.java trebuie rulat
+<h1 align="center">Harry Potter Game</h1>
+<h2 align="center">Work in progress...</h1>
