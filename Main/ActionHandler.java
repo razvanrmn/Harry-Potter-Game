@@ -10,18 +10,14 @@ public class ActionHandler implements ActionListener {
     public ActionHandler(GameManager gm) {
         this.gm = gm;
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         String yourChoice = e.getActionCommand();
         switch (yourChoice) {
-            case "START":
-            gm.actChanger.showActII();
-            break;
-            case "EXIT" : break;
 
-
-            //Change ACTS
-            case "goToActII" : gm.actChanger.showActII();
+            case "goToActII" :
+                gm.actChanger.showActII();
             break;
             case "goToActIII" : gm.actChanger.showActIII();
             break;
@@ -51,22 +47,24 @@ public class ActionHandler implements ActionListener {
                 gm.actChanger.showPlain();
                 gm.actChanger.uniform4();
                 break;
+
             case "BUY" :
-                if (gm.hogwarts.galleon < gm.hogwarts.plainWorkRobes)
+                if (gm.hogwarts.getGalleon() < Hogwarts.plainWorkRobes)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
-                if (gm.hogwarts.galleon < gm.hogwarts.plainPointedHat)
+                if (gm.hogwarts.getGalleon() < Hogwarts.plainPointedHat)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
-                if (gm.hogwarts.galleon < gm.hogwarts.winterCloak)
+                if (gm.hogwarts.getGalleon() < Hogwarts.winterCloak)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
-                    gm.hogwarts.purchase(gm.hogwarts.plainWorkRobes);
+                    gm.hogwarts.purchase(Hogwarts.plainWorkRobes);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.actChanger.showUniforms();
                 }
                 break;
             case "BACK" :
@@ -112,76 +110,85 @@ public class ActionHandler implements ActionListener {
                 break;
 
             case "BUYBOOK" :
-                if (gm.hogwarts.galleon < gm.hogwarts.book1)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book1)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book1);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book2)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book2)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book2);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book3)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book3)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book3);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book4)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book4)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book4);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book5)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book5)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book5);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book6)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book6)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book6);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book7)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book7)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book7);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
                 };
 
-                if (gm.hogwarts.galleon < gm.hogwarts.book8)
+                if (gm.hogwarts.getGalleon() < gm.hogwarts.book8)
                 {
                     gm.ui.messageText.setText("You don't have enough money");
                 }
                 else {
                     gm.hogwarts.purchase(gm.hogwarts.book8);
                     gm.ui.messageText.setText("Payment Successful");
+                    gm.ui.messageText.setText("You have " + gm.hogwarts.getGalleon() + " left in your bank account");
+                    gm.actChanger.menuBooks();
                 };
                 break;
             case "EQUIPMENT" :
@@ -213,6 +220,7 @@ public class ActionHandler implements ActionListener {
                 gm.actChanger.viewItems();
                 gm.actChanger.item5();
                 break;
+            case "BUYITEMS" :
 
         }
 

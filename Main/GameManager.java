@@ -3,7 +3,7 @@ package Main;
 // Toate clasele o sa fie conectate catre aceasta clasa
 public class GameManager {
     public Hogwarts hogwarts = new Hogwarts(this);
-    ActionHandler actionHandler = new ActionHandler(this);
+    public ActionHandler actionHandler = new ActionHandler(this);
     public UI ui = new UI(this);
     public ActChanger actChanger = new ActChanger(this);
 
@@ -12,7 +12,7 @@ public class GameManager {
     }
 
     public GameManager(){
-        actChanger.showActI();
+        actChanger.prologue();
     }
 
 }

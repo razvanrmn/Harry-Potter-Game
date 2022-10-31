@@ -7,193 +7,221 @@ public class ActChanger {
         this.gm = gm;
     }
 
+    public void prologue() {
+        gm.ui.bgPanel.get(0).setVisible(true);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
+
+    }
     public void showActI() {
-        gm.ui.bgPanel[1].setVisible(true);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
-        gm.ui.messageText.setText("Dai click pe barbos ca sa incepi joaca\nClick pe golden snitch pentru a trece la urmatorul cadru");
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(true);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
+        gm.ui.messageText.setText(gm.hogwarts.toString());
     }
     public void showActII() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(true);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(true);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Congratulations! You Have Been Accepted to Attend Hogwarts!");
     }
     public void showActIII() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(true);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
-        gm.ui.messageText.setText("Poftiti in vagoane nu stati pe peroane !");
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(true);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
+        gm.ui.messageText.setText("Hop on the train !");
     }
     public void showActIV() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(true);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(true);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Let's make some shopping!");
     }
 
     public void showActV() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(true);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(true);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("What would you like to purchase ?");
     }
 
     public void showUniforms(){
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(true);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(true);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Check our offer");
     }
 
     public void showPlain(){
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(true);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(true);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Click on uniforms");
     }
 
     // Carti
 
     public void menuBooks(){
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(true);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(true);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Which book would you like to purchase ?\nClick on the pile of books to see what do we have");
     }
 
     public void viewBooks(){
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(true);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(true);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Click on books if you want to buy something or return");
     }
     public void menuItems() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(true);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(true);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Which item would you like to purchase ?\nClick on the picture");
     }
 
     public void viewItems() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(true);
-        gm.ui.bgPanel[12].setVisible(false);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(true);
+        gm.ui.bgPanel.get(12).setVisible(false);
         gm.ui.messageText.setText("Which item would you like to purchase ?\nClick on the picture");
     }
 
     public void showActVI() {
-        gm.ui.bgPanel[1].setVisible(false);
-        gm.ui.bgPanel[2].setVisible(false);
-        gm.ui.bgPanel[3].setVisible(false);
-        gm.ui.bgPanel[4].setVisible(false);
-        gm.ui.bgPanel[5].setVisible(false);
-        gm.ui.bgPanel[6].setVisible(false);
-        gm.ui.bgPanel[7].setVisible(false);
-        gm.ui.bgPanel[8].setVisible(false);
-        gm.ui.bgPanel[9].setVisible(false);
-        gm.ui.bgPanel[10].setVisible(false);
-        gm.ui.bgPanel[11].setVisible(false);
-        gm.ui.bgPanel[12].setVisible(true);
+        gm.ui.bgPanel.get(0).setVisible(false);
+        gm.ui.bgPanel.get(1).setVisible(false);
+        gm.ui.bgPanel.get(2).setVisible(false);
+        gm.ui.bgPanel.get(3).setVisible(false);
+        gm.ui.bgPanel.get(4).setVisible(false);
+        gm.ui.bgPanel.get(5).setVisible(false);
+        gm.ui.bgPanel.get(6).setVisible(false);
+        gm.ui.bgPanel.get(7).setVisible(false);
+        gm.ui.bgPanel.get(8).setVisible(false);
+        gm.ui.bgPanel.get(9).setVisible(false);
+        gm.ui.bgPanel.get(10).setVisible(false);
+        gm.ui.bgPanel.get(11).setVisible(false);
+        gm.ui.bgPanel.get(12).setVisible(true);
         gm.ui.messageText.setText("Let's make a deposit");
     }
 
@@ -252,5 +280,23 @@ public class ActChanger {
         gm.ui.messageText.setText("Items prices are generated random\nIf you want to finish the transaction click BUY\nThe price for this item is " + gm.hogwarts.item5 + " galleons");
     }
 
-
+    public void checker() {
+        if (gm.hogwarts.getGalleon() < Hogwarts.plainWorkRobes)
+        {
+            gm.ui.messageText.setText("You don't have enough money");
+        }
+        if (gm.hogwarts.getGalleon() < Hogwarts.plainPointedHat)
+        {
+            gm.ui.messageText.setText("You don't have enough money");
+        }
+        if (gm.hogwarts.getGalleon() < Hogwarts.winterCloak)
+        {
+            gm.ui.messageText.setText("You don't have enough money");
+        }
+        else {
+            gm.hogwarts.purchase(Hogwarts.plainWorkRobes);
+            gm.ui.messageText.setText("Payment Successful");
+            gm.actChanger.showUniforms();
+        }
+    }
 }
